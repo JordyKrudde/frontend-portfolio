@@ -1,20 +1,41 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
 function Header() {
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const isScrolled = window.scrollY > 10;
+      if (isScrolled !== scrolled) {
+        setScrolled(isScrolled);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, [scrolled]);
+
   return (
-    <header>
-      <nav className="bg-white shadow-md p-4">
-        <div className="container mx-auto flex justify-between items-center">
-          <Link to="/" className="text-xl font-bold">My Portfolio</Link>
-          <div className="space-x-4">
-            <Link to="/" className="hover:text-blue-600">Home</Link>
-            <Link to="/about" className="hover:text-blue-600">About</Link>
-            <Link to="/projects" className="hover:text-blue-600">Projects</Link>
+    <div className="fixed top-0 left-0 w-full flex justify-center pt-6 z-50">
+      <header className={`max-w-5xl w-fit h-fit rounded-full transition-all duration-300 border border-gray-600/30 ${scrolled ? 'bg-black/70 backdrop-blur-sm' : 'bg-black/40 backdrop-blur-sm'}`}>
+        <nav className="px-6 py-4">
+          <div className="flex items-center space-x-12">
+            <div className="flex items-center">
+              <Link to="/" className="text-white hover:text-green-400 transition-colors px-7">HOME</Link>
+              <div className="h-5 border-l border-gray-500/50"></div>
+              <Link to="/about" className="text-white hover:text-green-400 transition-colors px-7">ABOUT ME</Link>
+              <div className="h-5 border-l border-gray-500/50"></div>
+              <Link to="/projects" className="text-white hover:text-green-400 transition-colors px-7">WORK</Link>
+              <div className="h-5 border-l border-gray-500/50"></div>
+              <Link to="/services" className="text-white hover:text-green-400 transition-colors px-7">SERVICES</Link>
+            </div>
           </div>
-        </div>
-      </nav>
-    </header>
+        </nav>
+      </header>
+    </div>
   );
 }
 

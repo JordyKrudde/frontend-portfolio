@@ -1,94 +1,78 @@
 import React from 'react';
 import Card from '../ui/Card';
-import Button from '../ui/Button';
+import hvhlImage from '../../assets/hvhl.png';
+import rapImage from '../../assets/rap.png';
+import rijnlandImage from '../../assets/rijnland.png';
+import vruImage from '../../assets/vru.png';
+import domeImage from '../../assets/dome.png';
 
-function ProjectsGrid({ 
-  title = "My Projects",
-  subtitle = "Check out some of my recent work",
-  projects = [],
-  maxDisplay = 6,
-  showViewAllButton = true,
-  viewAllLink = "/projects"
-}) {
-  // If no projects are provided, use some default placeholder projects
-  const displayProjects = projects.length > 0 ? projects.slice(0, maxDisplay) : [
+function ProjectsGrid() {
+  const displayProjects = [
     {
       id: 1,
-      title: "E-commerce Website",
-      description: "A fully responsive e-commerce platform built with React and Node.js",
-      image: "https://via.placeholder.com/600x400?text=E-commerce+Project",
-      tags: ["React", "Node.js", "MongoDB"],
-      link: "#"
+      title: "Hogeschool Van Hall Larenstein",
+      description: "Website for Hogeschool Van Hall Larenstein where future students can find information about the university and its programs",
+      image: hvhlImage,
+      link: "https://hvhl.nl/"
     },
     {
       id: 2,
-      title: "Portfolio Template",
-      description: "A customizable portfolio template for developers",
-      image: "https://via.placeholder.com/600x400?text=Portfolio+Template",
-      tags: ["React", "Tailwind CSS"],
-      link: "#"
+      title: "Rent A Pin",
+      description: "Platform for renting card machines",
+      image: rapImage,
+      link: "https://rentapin.nl/nl-nl/"
     },
     {
       id: 3,
-      title: "Task Management App",
-      description: "A drag-and-drop task management application",
-      image: "https://via.placeholder.com/600x400?text=Task+Management+App",
-      tags: ["React", "Redux", "Firebase"],
-      link: "#"
+      title: "Rijnland",
+      description: "Comprehensive platform for Rijnland Group",
+      image: rijnlandImage,
+      link: "https://www.rijnland.net/"
+    },
+    {
+      id: 5,
+      title: "Veiligheidsregio Utrecht",
+      description: "Comprehensive platform for safety region Utrecht where citizens can find information about safety and security in Utrecht",
+      image: vruImage,
+      link: "https://www.vru.nl/"
+    },
+    {
+      id: 6,
+      title: "Dome Auctions",
+      description: "Online auction platform for industrial equipment where users can buy and sell equipment",
+      image: domeImage,
+      link: "https://dome-auctions.com/en/"
     }
   ];
 
   return (
-    <section className="py-16 px-6 bg-gray-50" id="projects">
-      <div className="container mx-auto">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold mb-4">{title}</h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">{subtitle}</p>
-        </div>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {displayProjects.map((project) => (
-            <Card 
-              key={project.id} 
-              title={project.title}
-              image={project.image}
-              className="h-full flex flex-col transition-transform hover:-translate-y-2 duration-300"
-            >
-              <p className="text-gray-600 mb-4">{project.description}</p>
-              <div className="flex flex-wrap gap-2 mb-4 mt-auto">
-                {project.tags && project.tags.map((tag, index) => (
-                  <span 
-                    key={index} 
-                    className="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded"
-                  >
-                    {tag}
-                  </span>
-                ))}
-              </div>
-              <Button 
-                variant="outline" 
-                onClick={() => window.open(project.link, '_blank')}
-                className="w-full mt-2"
-              >
-                View Project
-              </Button>
-            </Card>
-          ))}
-        </div>
-
-        {showViewAllButton && projects.length > maxDisplay && (
-          <div className="text-center mt-12">
-            <Button 
-              variant="primary" 
-              size="lg"
-              onClick={() => window.location.href = viewAllLink}
-            >
-              View All Projects
-            </Button>
+    <div className="relative">
+      <section className="py-20 text-white relative overflow-hidden" id="projects">
+        <div className="container mx-auto mb-16 z-10">
+          <div className="text-center">
+            <p className="text-sm uppercase tracking-widest text-green-400 mb-4">PORTFOLIO</p>
+            <h2 className="text-5xl md:text-6xl">MY PROJECTS</h2>
+            <p className="text-xl text-white/80 max-w-3xl mx-auto mt-6">Check out some of my recent work</p>
           </div>
-        )}
-      </div>
-    </section>
+        </div>
+
+        <div className="container mx-auto z-10 relative">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {displayProjects.map((project) => (
+              <Card 
+                key={project.id} 
+                title={project.title}
+                image={project.image}
+                className="h-full flex flex-col transition-transform hover:-translate-y-2 duration-300"
+              >
+                <p className="text-white/80 mb-4">{project.description}</p>
+                <p className="text-[#F7AF29FF] text-sm mb-4 italic">In collaboration with Four Digits</p>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+    </div>
   );
 }
 

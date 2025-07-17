@@ -1,43 +1,26 @@
 import React from 'react';
 import Button from '../ui/Button';
 
-function HeroSection({ 
-  title = "Hi, I'm a Developer", 
-  subtitle = "I build amazing web experiences", 
-  ctaText = "View My Work", 
-  ctaLink = "#projects",
-  backgroundImage = null,
-  alignment = "center" // can be "left", "center", or "right"
-}) {
-  const alignmentClasses = {
-    left: "text-left items-start",
-    center: "text-center items-center",
-    right: "text-right items-end"
-  };
-
-  const bgStyle = backgroundImage 
-    ? { backgroundImage: `url(${backgroundImage})`, backgroundSize: 'cover', backgroundPosition: 'center' }
-    : {};
-
+function HeroSection() {
   return (
     <section 
-      className="relative py-20 px-6 flex items-center justify-center min-h-[60vh] bg-gradient-to-br from-blue-900 to-purple-800 text-white"
-      style={bgStyle}
-    >
-      {/* Overlay for better text readability when using background images */}
-      {backgroundImage && <div className="absolute inset-0 bg-black bg-opacity-50"></div>}
-      
-      <div className={`container mx-auto relative z-10 flex flex-col ${alignmentClasses[alignment]} space-y-6`}>
-        <h1 className="text-4xl md:text-6xl font-bold leading-tight">{title}</h1>
-        <p className="text-xl md:text-2xl max-w-2xl">{subtitle}</p>
-        <div className="mt-8">
+      className="relative py-20 mt-20 px-6 text-white"
+    > 
+      <div className="container flex justify-center mx-auto relative z-10">
+        <div className="max-w-5xl">
+          <p className="text-xl font-light text-green-400 tracking-wide">JORDY KRUDDE | FRONTEND DEVELOPER</p>
+          <h1 className="text-5xl md:text-7xl text-white mb-8">I build websites that you and your clients love</h1>
+          <p className="text-xl md:text-2xl font-light max-w-2xl mb-12">
+            My mission is to design and develop a website that you and your clients love
+            <span className="text-green-400 ml-1">♥</span>
+          </p>
           <Button 
-            variant="primary" 
-            size="lg" 
-            className="bg-white text-blue-900 hover:bg-gray-100"
-            onClick={() => window.location.href = ctaLink}
-          >
-            {ctaText}
+              variant="primary" 
+              size="lg" 
+              className="bg-teal-900/40 border border-teal-700/50 text-white hover:bg-teal-800/50 rounded-full py-4 px-8 flex items-center space-x-4 transition-all duration-300 cursor-auto"
+              href="#"
+            >
+              <span>Send me a message</span>
           </Button>
         </div>
       </div>
