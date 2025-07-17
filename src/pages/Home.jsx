@@ -1,13 +1,13 @@
 import React from 'react';
 import HeroSection from '../components/blocks/HeroSection';
-import ClientsSection from '../components/blocks/ClientsSection';
 import ProjectsGrid from '../components/blocks/ProjectsGrid';
+import TechStackSection from '../components/blocks/TechStackSection';
 
 function Home() {
   return (
     <>
       <HeroSection />
-      <ClientsSection />
+      <TechStackSection />
       <ProjectsGrid />
     </>
   );

@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 
-function ClientsSection() {
+function TechStackSection() {
   const carouselRef = useRef(null);
   
   useEffect(() => {
@@ -32,7 +32,7 @@ function ClientsSection() {
     };
   }, []);
 
-  const clients = [
+  const tech = [
     { name: 'Github' },
     { name: 'React' },
     { name: 'Tailwind CSS' },
@@ -63,21 +63,21 @@ function ClientsSection() {
             className="flex items-center space-x-6 py-8"
             style={{ willChange: 'transform' }}
           >
-            {clients.map((client, index) => (
+            {tech.map((tech, index) => (
               <div 
-                key={`${client.name}-${index}`} 
+                key={`${tech.name}-${index}`}
                 className="flex-shrink-0 w-64 h-48 border border-slate-100/20 rounded-lg flex items-center justify-center p-6 bg-[#5a89fd0d] backdrop-blur-[8px]"
               >
-                <div className="text-white text-2xl">{client.name}</div>
+                <div className="text-white text-2xl">{tech.name}</div>
               </div>
             ))}
             
-            {clients.map((client, index) => (
+            {tech.map((tech, index) => (
               <div 
-                key={`${client.name}-duplicate-${index}`} 
+                key={`${tech.name}-duplicate-${index}`}
                 className="flex-shrink-0 w-64 h-48 border border-slate-100/20 rounded-lg flex items-center justify-center p-6 bg-[#5a89fd0d] backdrop-blur-[8px]"
               >
-                <div className="text-white text-2xl">{client.name}</div>
+                <div className="text-white text-2xl">{tech.name}</div>
               </div>
             ))}
           </div>
@@ -87,4 +87,4 @@ function ClientsSection() {
   );
 }
 
-export default ClientsSection;
+export default TechStackSection;

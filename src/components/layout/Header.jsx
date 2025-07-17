@@ -26,11 +26,9 @@ function Header() {
             <div className="flex items-center">
               <Link to="/" className="text-white hover:text-green-400 transition-colors px-7">HOME</Link>
               <div className="h-5 border-l border-gray-500/50"></div>
-              <Link to="/about" className="text-white hover:text-green-400 transition-colors px-7">ABOUT ME</Link>
-              <div className="h-5 border-l border-gray-500/50"></div>
               <Link to="/projects" className="text-white hover:text-green-400 transition-colors px-7">WORK</Link>
               <div className="h-5 border-l border-gray-500/50"></div>
-              <Link to="/services" className="text-white hover:text-green-400 transition-colors px-7">SERVICES</Link>
+              <Link to="/blog" className="text-white hover:text-green-400 transition-colors px-7">BLOG</Link>
             </div>
           </div>
         </nav>
