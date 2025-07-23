@@ -59,15 +59,22 @@ function ProjectsGrid() {
         <div className="container mx-auto z-10 relative">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {displayProjects.map((project) => (
-              <Card 
-                key={project.id} 
-                title={project.title}
-                image={project.image}
-                className="h-full flex flex-col transition-transform hover:-translate-y-2 duration-300"
+              <a 
+                href={project.link} 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="block cursor-pointer" 
+                key={project.id}
               >
-                <p className="text-white/80 mb-4">{project.description}</p>
-                <p className="text-[#F7AF29FF] text-sm mb-4 italic">In collaboration with Four Digits</p>
-              </Card>
+                <Card 
+                  title={project.title}
+                  image={project.image}
+                  className="h-full flex flex-col transition-transform hover:-translate-y-2 duration-300"
+                >
+                  <p className="text-white/80 mb-4">{project.description}</p>
+                  <p className="text-[#F7AF29FF] text-sm mb-4 italic">In collaboration with Four Digits</p>
+                </Card>
+              </a>
             ))}
           </div>
         </div>

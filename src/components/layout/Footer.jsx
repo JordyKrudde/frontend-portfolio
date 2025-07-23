@@ -1,53 +1,6 @@
-import React, { useRef, useEffect } from 'react';
-
-function Footer() {
-  const scrollTextRef = useRef(null);
-  
-  useEffect(() => {
-    let animationId;
-    const scrollContainer = scrollTextRef.current;
-    
-    if (!scrollContainer) return;
-
-    const content = scrollContainer.innerHTML;
-    scrollContainer.innerHTML = content + content;
-    
-    let scrollAmount = 0;
-    const speed = 1;
-    
-    const scroll = () => {
-      scrollAmount += speed;
-      
-      if (scrollAmount >= scrollContainer.firstElementChild.offsetWidth) {
-        scrollAmount = 0;
-      }
-      
-      scrollContainer.style.transform = `translateX(-${scrollAmount}px)`;
-      animationId = requestAnimationFrame(scroll);
-    };
-    
-    animationId = requestAnimationFrame(scroll);
-    
-    return () => {
-      cancelAnimationFrame(animationId);
-    };
-  }, []);
-  
+function Footer() {  
   return (
     <footer className="bg-black text-white py-12">
-      <div className="overflow-hidden border-t border-b border-gray-800 py-8">
-        <div className="w-full overflow-hidden">
-          <div 
-            ref={scrollTextRef} 
-            className="flex whitespace-nowrap text-[12rem] font-bold tracking-tighter"
-          >
-            <span className="mr-8">LET'S TALK -</span>
-            <span className="mr-8">LET'S TALK -</span>
-            <span className="mr-8">LET'S TALK -</span>
-          </div>
-        </div>
-      </div>
-      
       <div className="container mx-auto px-4 mt-8">
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="mb-4 md:mb-0">

@@ -24,9 +24,9 @@ function Header() {
         <nav className="px-6 py-4">
           <div className="flex items-center space-x-12">
             <div className="flex items-center">
-              <Link to="/" className="text-white hover:text-green-400 transition-colors px-7">HOME</Link>
+              <a href="#home" className="text-white hover:text-green-400 transition-colors px-7">HOME</a>
               <div className="h-5 border-l border-gray-500/50"></div>
-              <Link to="/projects" className="text-white hover:text-green-400 transition-colors px-7">WORK</Link>
+              <a href="#projects" className="text-white hover:text-green-400 transition-colors px-7">PROJECTS</a>
               <div className="h-5 border-l border-gray-500/50"></div>
               <Link to="/blog" className="text-white hover:text-green-400 transition-colors px-7">BLOG</Link>
             </div>

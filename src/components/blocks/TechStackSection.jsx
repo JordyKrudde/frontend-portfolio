@@ -35,6 +35,7 @@ function TechStackSection() {
   const tech = [
     { name: 'Github' },
     { name: 'React' },
+    { name: 'VS Code' },
     { name: 'Tailwind CSS' },
     { name: 'Django' },
     { name: 'Python' },
