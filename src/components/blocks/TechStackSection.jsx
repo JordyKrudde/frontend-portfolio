@@ -53,8 +53,8 @@ function TechStackSection() {
       <section className="py-20 text-white relative overflow-hidden">
         <div className="container mx-auto mb-16 z-10">
           <div className="text-center">
-            <p className="text-sm uppercase tracking-widest text-green-400 mb-4">GOOD STUFF</p>
-            <h2 className="text-5xl md:text-6xl">TECH I LIKE TO WORK WITH</h2>
+            <p className="text-sm uppercase tracking-widest text-green-400 mb-4">GOEDE ZAKEN</p>
+            <h2 className="text-5xl md:text-6xl">TECH WAAR IK GRAAG MEE WERK</h2>
           </div>
         </div>
         

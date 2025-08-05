@@ -11,35 +11,35 @@ function ProjectsGrid() {
     {
       id: 1,
       title: "Hogeschool Van Hall Larenstein",
-      description: "Website for Hogeschool Van Hall Larenstein where future students can find information about the university and its programs",
+      description: "Website voor Hogeschool Van Hall Larenstein waar toekomstige studenten informatie kunnen vinden over de hogeschool en haar opleidingen",
       image: hvhlImage,
       link: "https://hvhl.nl/"
     },
     {
       id: 2,
       title: "Rent A Pin",
-      description: "Platform for renting card machines",
+      description: "Platform voor het huren van kaartmachines",
       image: rapImage,
       link: "https://rentapin.nl/nl-nl/"
     },
     {
       id: 3,
       title: "Rijnland",
-      description: "Comprehensive platform for Rijnland Group",
+      description: "Uitgebreid platform voor Rijnland Group",
       image: rijnlandImage,
       link: "https://www.rijnland.net/"
     },
     {
       id: 5,
       title: "Veiligheidsregio Utrecht",
-      description: "Comprehensive platform for safety region Utrecht where citizens can find information about safety and security in Utrecht",
+      description: "Uitgebreid platform voor Veiligheidsregio Utrecht waar burgers informatie kunnen vinden over veiligheid in Utrecht",
       image: vruImage,
       link: "https://www.vru.nl/"
     },
     {
       id: 6,
       title: "Dome Auctions",
-      description: "Online auction platform for industrial equipment where users can buy and sell equipment",
+      description: "Online veilingplatform voor industriële apparatuur waar gebruikers apparatuur kunnen kopen en verkopen",
       image: domeImage,
       link: "https://dome-auctions.com/en/"
     }
@@ -51,8 +51,8 @@ function ProjectsGrid() {
         <div className="container mx-auto mb-16 z-10">
           <div className="text-center">
             <p className="text-sm uppercase tracking-widest text-green-400 mb-4">PORTFOLIO</p>
-            <h2 className="text-5xl md:text-6xl">MY PROJECTS</h2>
-            <p className="text-xl text-white/80 max-w-3xl mx-auto mt-6">Check out some of my recent work</p>
+            <h2 className="text-5xl md:text-6xl">MIJN PROJECTEN</h2>
+            <p className="text-xl text-white/80 max-w-3xl mx-auto mt-6">Bekijk een aantal van mijn recente werken</p>
           </div>
         </div>
 
@@ -72,7 +72,7 @@ function ProjectsGrid() {
                   className="h-full flex flex-col transition-transform hover:-translate-y-2 duration-300"
                 >
                   <p className="text-white/80 mb-4">{project.description}</p>
-                  <p className="text-[#F7AF29FF] text-sm mb-4 italic">In collaboration with Four Digits</p>
+                  <p className="text-[#F7AF29FF] text-sm mb-4 italic">In samenwerking met Four Digits</p>
                 </Card>
               </a>
             ))}
