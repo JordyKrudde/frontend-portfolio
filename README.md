@@ -1,12 +1,46 @@
-# React + Vite
+# Jordy Krudde - Frontend Developer Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This repository contains the source code for my personal portfolio website, showcasing my skills, experience, and projects as a frontend developer.
 
-Currently, two official plugins are available:
+## Project Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This portfolio is built with modern web technologies to demonstrate my expertise in frontend development:
 
-## Expanding the ESLint configuration
+- **React**: Component-based UI architecture
+- **Vite**: Fast and efficient build tooling
+- **React Router**: Client-side routing for a seamless single-page application experience
+- **Tailwind CSS**: Utility-first CSS framework for responsive and modern design
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Features
+
+- **Hero Section**: Introduction and personal branding
+- **Tech Stack**: Overview of my technical skills and proficiencies
+- **Experience**: Timeline of my professional experience and achievements
+- **Projects**: Showcase of my notable development projects
+- **Contact**: Easy ways to get in touch with me
+
+## Development
+
+### Prerequisites
+
+- Node.js (latest LTS version recommended)
+- npm or yarn
+
+### Getting Started
+
+1. Clone this repository
+2. Install dependencies: `npm install` or `yarn`
+3. Start the development server: `npm run dev` or `yarn dev`
+4. Open your browser at `http://localhost:5173`
+
+### Build for Production
+
+```
+npm run build
+```
+
+This will generate optimized assets in the `dist` directory.
+
+## Deployment
+
+This site is automatically deployed using GitHub Actions workflow whenever changes are pushed to the main branch.
