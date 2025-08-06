@@ -10,16 +10,15 @@ function HeroSection() {
       <div className="container flex justify-center mx-auto relative z-10">
         <div className="max-w-5xl">
           <p className="text-xl font-light text-green-400 tracking-wide">JORDY KRUDDE | FRONTEND DEVELOPER</p>
-          <h1 className="text-5xl md:text-7xl text-white mb-8">Frontend developer met een passie voor het creëren van mooie en functionele web ervaringen</h1>
+          <h1 className="text-5xl md:text-7xl text-white mb-8">Developer met passie voor mooie en functionele web ervaringen</h1>
           <p className="text-xl md:text-2xl font-light max-w-2xl mb-12">
-            Ik ben gespecialiseerd in het bouwen van responsieve en gebruiksvriendelijke websites met moderne technologieën zoals React, Tailwind CSS en meer. Laten we samen iets geweldigs creëren! 
-            <span className="text-green-400 ml-1">♥</span>
+            Ik transformeer jouw ideeën naar digitale oplossingen die converteren, inspireren en resultaat leveren. Laten we samen jouw online succes bouwen!
           </p>
           <Button 
               variant="primary" 
               size="lg" 
               className="bg-teal-900/40 border border-teal-700/50 text-white hover:bg-teal-800/50 rounded-full py-4 px-8 flex items-center space-x-4 transition-all duration-300 cursor-auto"
-              href="#"
+              href="mailto:jordykrudde@gmail.com"
             >
               <span>Stuur mij een bericht</span>
           </Button>

@@ -5,6 +5,7 @@ import rapImage from '../../assets/rap.png';
 import rijnlandImage from '../../assets/rijnland.png';
 import vruImage from '../../assets/vru.png';
 import domeImage from '../../assets/dome.png';
+import warchildImage from '../../assets/warchild.png';
 
 function ProjectsGrid() {
   const displayProjects = [
@@ -17,31 +18,38 @@ function ProjectsGrid() {
     },
     {
       id: 2,
-      title: "Rent A Pin",
-      description: "Platform voor het huren van kaartmachines",
-      image: rapImage,
-      link: "https://rentapin.nl/nl-nl/"
-    },
-    {
-      id: 3,
-      title: "Rijnland",
-      description: "Uitgebreid platform voor Rijnland Group",
-      image: rijnlandImage,
-      link: "https://www.rijnland.net/"
-    },
-    {
-      id: 5,
       title: "Veiligheidsregio Utrecht",
       description: "Uitgebreid platform voor Veiligheidsregio Utrecht waar burgers informatie kunnen vinden over veiligheid in Utrecht",
       image: vruImage,
       link: "https://www.vru.nl/"
     },
     {
-      id: 6,
+      id: 3,
       title: "Dome Auctions",
       description: "Online veilingplatform voor industriële apparatuur waar gebruikers apparatuur kunnen kopen en verkopen",
       image: domeImage,
       link: "https://dome-auctions.com/en/"
+    },
+    {
+      id: 4,
+      title: "Warchild",
+      description: "Website voor Warchild waar informatie te vinden is over de organisatie en haar doelen",
+      image: warchildImage,
+      link: "https://warchild.nl/"
+    },
+    {
+      id: 5,
+      title: "Rent A Pin",
+      description: "Platform voor het huren van kaartmachines",
+      image: rapImage,
+      link: "https://rentapin.nl/nl-nl/"
+    },
+    {
+      id: 6,
+      title: "Rijnland",
+      description: "Uitgebreid platform voor Rijnland Group",
+      image: rijnlandImage,
+      link: "https://www.rijnland.net/"
     }
   ];
 

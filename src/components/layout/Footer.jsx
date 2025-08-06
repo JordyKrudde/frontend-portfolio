@@ -12,9 +12,12 @@ function Footer() {
             </div>
           </div>
           
-          <div className="flex space-x-4">
-            <a href="https://www.linkedin.com/in/jkrudde/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center text-sm text-white/80 hover:text-white transition-colors">
-              LINKEDIN <span className="ml-1 text-sm">→</span>
+          <div className="flex space-x-6">
+            <a href="https://www.linkedin.com/in/jkrudde/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center text-sm text-white/80 hover:text-white transition-colors group">
+              LINKEDIN <span className="ml-1 text-sm transform transition-transform duration-300 group-hover:translate-x-1">→</span>
+            </a>
+            <a href="https://github.com/jordykrudde" target="_blank" rel="noopener noreferrer" className="inline-flex items-center text-sm text-white/80 hover:text-white transition-colors group">
+              GITHUB <span className="ml-1 text-sm transform transition-transform duration-300 group-hover:translate-x-1">→</span>
             </a>
           </div>
         </div>
