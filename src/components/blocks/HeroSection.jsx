@@ -4,7 +4,7 @@ import Button from '../ui/Button';
 function HeroSection() {
   return (
     <section 
-      className="relative py-12 md:py-20 px-6 text-white md:mt-20 mt-6"
+      className="relative py-12 md:py-20 px-6 text-white md:mt-20 mt-12"
       id="home"
     > 
       <div className="container flex justify-center mx-auto relative z-10">
