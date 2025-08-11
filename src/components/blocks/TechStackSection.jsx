@@ -33,7 +33,7 @@ function TechStackSection() {
   }, []);
 
   const tech = [
-    { name: 'Github' },
+    { name: 'Git' },
     { name: 'React' },
     { name: 'VS Code' },
     { name: 'Tailwind CSS' },
@@ -42,7 +42,7 @@ function TechStackSection() {
     { name: 'SCSS' },
     { name: 'Figma' },
     { name: 'Windsurf' },
-    { name: 'Docker' },
+    { name: 'Vite' },
   ];
 
   return (
@@ -50,11 +50,11 @@ function TechStackSection() {
       <div className="absolute inset-0 z-0">
           <div id="blob" className="absolute top-1/5 left-1/2 right-1/2 -translate-x-1/2 filter blur-[8px] z-0"></div>
         </div>
-      <section className="py-20 text-white relative overflow-hidden">
+      <section className="py-12 md:py-20 text-white relative overflow-hidden">
         <div className="container mx-auto mb-16 z-10">
           <div className="text-center">
-            <p className="text-sm uppercase tracking-widest text-green-400 mb-4">GOEDE ZAKEN</p>
-            <h2 className="text-5xl md:text-6xl">TECH WAAR IK GRAAG MEE WERK</h2>
+            <p className="text-sm uppercase tracking-widest text-green-400 mb-4">Tech Stack</p>
+            <h2 className="text-5xl md:text-6xl uppercase">Tech waar ik graag mee werk</h2>
           </div>
         </div>
         

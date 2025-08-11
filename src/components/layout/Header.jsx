@@ -29,11 +29,11 @@ function Header() {
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center space-x-12">
             <div className="flex items-center">
-              <a href="#home" className="text-white hover:text-green-400 transition-colors px-7">HOME</a>
+              <a href="#home" className="text-white hover:text-green-400 transition-colors px-7 uppercase">Home</a>
               <div className="h-5 border-l border-gray-500/50"></div>
-              <a href="#experience" className="text-white hover:text-green-400 transition-colors px-7">WERKERVARING</a>
+              <a href="#experience" className="text-white hover:text-green-400 transition-colors px-7 uppercase">Werkervaring</a>
               <div className="h-5 border-l border-gray-500/50"></div>
-              <a href="#projects" className="text-white hover:text-green-400 transition-colors px-7">PROJECTEN</a>
+              <a href="#projects" className="text-white hover:text-green-400 transition-colors px-7 uppercase">Projecten</a>
             </div>
           </div>
           

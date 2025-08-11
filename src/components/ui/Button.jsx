@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Button({ children, variant = 'primary', size = 'md', className = '', onClick, ...props }) {
+function Button({ children, variant = 'primary', className = '', onClick, ...props }) {
   // Define variant styles
   const variantStyles = {
     primary: 'bg-blue-600 hover:bg-blue-700 text-white',
@@ -9,21 +9,14 @@ function Button({ children, variant = 'primary', size = 'md', className = '', on
     danger: 'bg-red-600 hover:bg-red-700 text-white',
   };
 
-  // Define size styles
-  const sizeStyles = {
-    sm: 'py-1 px-3 text-sm',
-    md: 'py-2 px-4',
-    lg: 'py-3 px-6 text-lg',
-  };
-
   return (
-    <button
-      className={`rounded font-medium transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 ${variantStyles[variant]} ${sizeStyles[size]} ${className}`}
+    <a
+      className={`rounded font-medium w-max transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 ${variantStyles[variant]} ${className}`}
       onClick={onClick}
       {...props}
     >
       {children}
-    </button>
+    </a>
   );
 }
 

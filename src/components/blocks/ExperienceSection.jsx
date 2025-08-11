@@ -8,19 +8,19 @@ function ExperienceSection() {
       role: "Frontend Developer",
       company: "Four Digits",
       period: "2022 - Heden",
-      description: "Ontwikkelen en onderhouden van websites voor verschillende klanten. Gewerkt met HTML, CSS, JavaScript en React componenten."
+      description: "Ontwikkelen en onderhouden van websites voor verschillende opdrachtgevers. Voornamelijk met HTML, SCSS, JavaScript, Django, Python en React."
     },
     {
       id: 2,
       role: "Student Software Developer",
       company: "Graafschap College Doetinchem",
       period: "2019 - 2022",
-      description: "Als student heb ik hier de basis van softwareontwikkeling en webontwikkeling geleerd."
+      description: "Als student heb ik hier de basis van webdevelopment geleerd."
     },
   ];
 
   return (
-    <section className="py-20 text-white relative overflow-hidden" id="experience">
+    <section className="py-12 md:py-20 text-white relative overflow-hidden" id="experience">
       <div className="container mx-auto mb-16 z-10 relative">
         <div className="text-center mb-16">
           <p className="text-sm uppercase tracking-widest text-green-400 mb-4">MIJN ERVARING</p>
