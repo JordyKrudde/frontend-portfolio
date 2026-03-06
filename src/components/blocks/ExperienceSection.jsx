@@ -23,8 +23,8 @@ function ExperienceSection() {
     <section className="py-12 md:py-20 text-white relative overflow-hidden" id="experience">
       <div className="container mx-auto mb-16 z-10 relative">
         <div className="text-center mb-16">
-          <p className="text-sm uppercase tracking-widest text-green-400 mb-4">MIJN ERVARING</p>
-          <h2 className="text-5xl md:text-6xl">WERKERVARING</h2>
+          <p className="text-sm uppercase tracking-widest text-green-400 mb-4">Mijn ervaring</p>
+          <h2 className="text-5xl md:text-6xl">Werkervaring</h2>
         </div>
         
         <div className="max-w-4xl mx-auto relative">

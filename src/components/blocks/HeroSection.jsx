@@ -14,14 +14,6 @@ function HeroSection() {
           <p className="text-xl md:text-2xl font-light max-w-2xl mb-12">
             Gespecialiseerd in het ontwikkelen van moderne web applicaties met focus op visueel aantrekkelijke, toegankelijke en gebruiksvriendelijke web ervaringen.
           </p>
-          <Button 
-              variant="primary" 
-              size="lg" 
-              className="bg-teal-900/40 border border-teal-700/50 text-white hover:bg-teal-800/50 rounded-full py-4 px-8 flex items-center space-x-4 transition-all duration-300"
-              href="https://wa.me/31640287003"
-            >
-              <span>Stuur mij een bericht via WhatsApp</span>
-          </Button>
         </div>
       </div>
     </section>
