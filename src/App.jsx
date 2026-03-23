@@ -1,5 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Home from './pages/Home'
+import Blog from './pages/Blog'
+import BlogPost from './pages/BlogPost'
 import Header from './components/layout/Header'
 import Footer from './components/layout/Footer'
 
@@ -8,14 +10,16 @@ function App() {
     <Router>
       <div className="min-h-screen flex flex-col">
         <Header />
-        
+
         <main className="flex-grow">
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/blog" element={<Blog />} />
+            <Route path="/blog/:slug" element={<BlogPost />} />
           </Routes>
         </main>
-        
-        <Footer />  
+
+        <Footer />
       </div>
     </Router>
   )
