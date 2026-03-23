@@ -21,6 +21,9 @@ function Footer() {
             </a>
           </div>
         </div>
+        <div className="mt-8 pt-6 border-t border-white/10 text-center text-xs text-gray-500">
+          © {new Date().getFullYear()} Jordy Krudde. All rights reserved.
+        </div>
       </div>
     </footer>
   );
